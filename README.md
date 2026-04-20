@@ -63,23 +63,15 @@ Every evaluation produces a 14-section output:
 
 ### Claude Code (Recommended)
 
-1. Clone or download this repository into your Claude skills directory:
+1. Clone this repository into your Claude skills directory:
 
 ```bash
 git clone https://github.com/Anmoll-W/pg-startup-eval ~/.claude/skills/pg-startup-eval
 ```
 
-2. Register the skill in your Claude Code settings (`~/.claude/settings.json`):
+That's it. Claude Code auto-discovers skills in `~/.claude/skills/` — no settings file changes needed.
 
-```json
-{
-  "skills": [
-    "~/.claude/skills/pg-startup-eval"
-  ]
-}
-```
-
-3. Use it in any Claude Code session:
+2. Use it in any Claude Code session:
 
 ```
 /pg-startup-eval
