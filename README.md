@@ -1,3 +1,5 @@
+
+
 # pg-startup-eval — The Definitive Startup Idea Evaluator for Claude
 
 Stop getting vague AI feedback on your idea. This skill applies 17 investor and founder frameworks, runs live market research, and ends with a forced verdict — Strong, Weak, or Pivot Required — with specific reasons.
@@ -116,7 +118,10 @@ After a verdict, the skill recommends the appropriate next action:
 - `/marketing-skills:customer-research` — run formal discovery
 
 **If Weak:**
-- Return to this skill after validating the single most important hypothesis
+- `/grill-me` — stress-test the specific hypothesis that must be validated
+- `/superpowers:brainstorm` — design experiments to confirm or kill the core assumption
+- `/investment-agent` — simulate investor scrutiny on the blockers
+- Return to this skill after validation is done
 
 **If Pivot Required:**
 - `/superpowers:brainstorm` — generate adjacent idea variants
