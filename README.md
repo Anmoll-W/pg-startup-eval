@@ -110,8 +110,8 @@ The Final Verdict section is one of three options with no hedging:
 After a verdict, the skill recommends the appropriate next action:
 
 **If Strong:**
-- `/spec-miner` — mine requirements from customer conversations
-- `/feature-forge` — design the MVP feature set
+- Mine requirements from customer conversations (inline, no skill installed)
+- Design the MVP feature set (inline, no skill installed)
 - `/marketing-skills:launch-strategy` — build the GTM plan
 - `/marketing-skills:customer-research` — run formal discovery
 
@@ -119,12 +119,11 @@ After a verdict, the skill recommends the appropriate next action:
 - Return to this skill after validating the single most important hypothesis
 
 **If Pivot Required:**
-- `/superpowers:brainstorm` — generate adjacent idea variants
+- `superpowers:brainstorming` — generate adjacent idea variants
 
 **For all verdicts:**
-- `/investment-agent` — simulated investor conversation
-- `/grill-me` — stress-test the pitch
-- `/architecture-designer` — design the technical system when it's time to build
+- `decision-support` (GRILL mode), stress-test the pitch and simulate the investor conversation
+- Design the technical system when it's time to build (inline, no skill installed)
 
 ## Reference Files
 

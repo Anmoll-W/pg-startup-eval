@@ -1,6 +1,6 @@
 ---
 name: pg-startup-eval
-description: The definitive one-stop startup and business idea evaluator. Applies Paul Graham, Peter Thiel, Marc Andreessen, Sequoia, Bill Gurley, Steve Blank, Rob Fitzpatrick (Mom Test), Jobs-to-Be-Done, Hamilton Helmer's 7 Powers, and 10+ other top frameworks. Use whenever the user wants to evaluate, pressure test, validate, stress test, or think through any business idea, product idea, startup concept, or side project — even informally phrased ("what do you think about this idea?", "is this worth pursuing?", "I was thinking of building X"). This skill does live market research, runs every major investor/founder evaluation dimension, and ends with a forced verdict plus a roadmap of next steps. Do not skip this skill for any idea-evaluation request.
+description: The definitive one-stop startup and business idea evaluator. Applies Paul Graham, Peter Thiel, Marc Andreessen, Sequoia, Bill Gurley, Steve Blank, Rob Fitzpatrick (Mom Test), Jobs-to-Be-Done, Hamilton Helmer's 7 Powers, and 10+ other top frameworks. Use whenever the user wants to evaluate, pressure test, validate, stress test, or think through any business idea, product idea, startup concept, or side project: even informally phrased ("what do you think about this idea?", "is this worth pursuing?", "I was thinking of building X"). This skill does live market research, runs every major investor/founder evaluation dimension, and ends with a forced verdict plus a roadmap of next steps. Do not skip this skill for any idea-evaluation request.
 ---
 
 # The Definitive Startup & Business Idea Evaluator
@@ -335,30 +335,29 @@ Based on the verdict, recommend the appropriate next action and skill. Pass the 
 
 **If Strong:**
 - Immediate action: get Level 3 validation before writing a line of code
-- `/spec-miner` — mine exact requirements from the customer conversations you just ran; pass the problem statement and target customer verbatim
-- `/feature-forge` — design the MVP feature set; pass the beachhead definition and the 10x dimension as context
+- Mine exact requirements from the customer conversations you just ran, quoting the problem statement and target customer verbatim. No skill is installed for this; do it inline.
+- Design the MVP feature set against the beachhead definition and the 10x dimension. No skill is installed for this; do it inline.
 - `/marketing-skills:launch-strategy` — build the GTM plan; pass the distribution model chosen and the beachhead
 - `/marketing-skills:customer-research` — structure the next 20 discovery interviews; pass the archetype and commitment ladder level
-- `/investment-agent` — simulate a seed investor grilling you; pass the Sequoia scorecard results and the three fatal flaws
+- `decision-support` (GRILL mode), simulate a seed investor grilling you; pass the Sequoia scorecard results and the three fatal flaws
 
 **If Weak:**
 - Name the single most important hypothesis to validate
 - Design the cheapest test that would confirm or kill it (fake door, concierge, 20 interviews)
-- `/grill-me` — get interrogated on the specific hypothesis that must be validated; pass the exact flaw ranked #1
-- `/superpowers:brainstorm` — generate the minimum viable experiments to confirm or kill the core assumption; pass the assumption as context
-- `/investment-agent` — understand exactly what an investor would need to see before funding; pass the Weak verdict and the blockers
+- `decision-support` (GRILL mode), get interrogated on the specific hypothesis that must be validated; pass the exact flaw ranked #1. Use INVERT mode first if the idea is stated as a solution with no established problem.
+- `superpowers:brainstorming` — generate the minimum viable experiments to confirm or kill the core assumption; pass the assumption as context
+- `decision-support` (GRILL mode), understand exactly what an investor would need to see before funding; pass the Weak verdict and the blockers
 - Return to `/pg-startup-eval` after validation is done
 
 **If Pivot Required:**
-- `/superpowers:brainstorm` — generate 5 adjacent pivots using everything learned about the domain and customer pain; pass the domain insight and target customer
-- `/critique` — stress-test each pivot before committing to a new evaluation cycle
+- `superpowers:brainstorming` — generate 5 adjacent pivots using everything learned about the domain and customer pain; pass the domain insight and target customer
+- `decision-support` (CHALLENGE mode), stress-test each pivot before committing to a new evaluation cycle
 - Return to `/pg-startup-eval` with the refined idea
 
 **For all verdicts — use when the condition is met:**
-- `/investment-agent` — simulate a Series A partner (not just seed) grilling the pitch; use after getting to Level 2+ validation
-- `/grill-me` — adversarial stress test on the pitch narrative; use before any investor conversation
-- `/architecture-designer` — only invoke after Level 3 validation and a Strong verdict; pass the chosen distribution model and GTM
-- `/feature-forge` — use to scope MVP to the smallest set that proves the core assumption; do not use before the beachhead is defined
+- `decision-support` (GRILL mode), adversarial stress test on the pitch narrative, including simulating a Series A partner rather than only a seed investor; use before any investor conversation and after reaching Level 2+ validation
+- Design the technical system only after Level 3 validation and a Strong verdict, working from the chosen distribution model and GTM. No skill is installed for this; do it inline.
+- Scope the MVP to the smallest set that proves the core assumption, never before the beachhead is defined. No skill is installed for this; do it inline.
 - `/marketing-skills:pricing-strategy` — use after unit economics are modeled; pass LTV/CAC ratios and customer segments
 - `/marketing-skills:competitor-alternatives` — use to build the competitive positioning narrative after differentiation is defined
 
