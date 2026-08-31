@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/banner.png" alt="The PM Code Skills: seven Claude Code skills with verification built in" width="100%">
+
 # The PM Code Skills
 
 **Seven Claude Code skills for people who ship products, not templates.**

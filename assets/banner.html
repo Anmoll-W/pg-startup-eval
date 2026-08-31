@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#2563EB; --blue-lt:#6C9CF5; --ink:#0A0A0A;
+    --d-ink:#F6F7F9; --d-mute:rgba(255,255,255,.60); --d-faint:rgba(255,255,255,.40);
+    --d-line:rgba(255,255,255,.10);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{background:var(--ink)}
+  .banner{
+    width:1280px;height:440px;background:var(--ink);
+    position:relative;overflow:hidden;
+    font-family:'Inter',system-ui,sans-serif;
+    display:flex;flex-direction:column;justify-content:center;
+    padding:0 84px;
+  }
+  /* faint grid wash, top-right, very subtle depth */
+  .glow{position:absolute;top:-160px;right:-120px;width:520px;height:520px;
+    background:radial-gradient(circle,rgba(37,99,235,.18),rgba(37,99,235,0) 68%);
+    filter:blur(6px);pointer-events:none}
+  .row1{display:flex;align-items:center;gap:26px;margin-bottom:26px}
+  .tile{width:92px;height:92px;border-radius:18px;background:var(--blue);
+    display:flex;align-items:center;justify-content:center;flex:none;
+    box-shadow:0 8px 30px rgba(37,99,235,.35)}
+  .tile span{font-weight:800;font-size:42px;color:#fff;letter-spacing:-1.5px}
+  .eyebrow{font-family:'JetBrains Mono',monospace;font-weight:500;
+    font-size:15px;letter-spacing:.20em;text-transform:uppercase;
+    color:var(--d-mute);display:flex;align-items:center;gap:11px}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--blue-lt);flex:none}
+  h1{font-weight:900;font-size:82px;line-height:.98;letter-spacing:-2.4px;
+    color:var(--d-ink);margin-bottom:22px}
+  h1 .k{color:var(--d-ink)}
+  .sub{font-weight:400;font-size:23px;line-height:1.4;color:var(--d-mute);
+    max-width:860px;margin-bottom:34px}
+  .bar{width:56px;height:6px;background:var(--blue);border-radius:3px;margin-bottom:30px}
+  .chips{font-family:'JetBrains Mono',monospace;font-weight:400;font-size:14.5px;
+    letter-spacing:.01em;color:var(--d-faint);white-space:nowrap}
+  .chips .s{color:var(--blue-lt);opacity:.65;padding:0 9px}
+</style>
+</head>
+<body>
+  <div class="banner">
+    <div class="glow"></div>
+    <div class="row1">
+      <div class="tile"><span>PM</span></div>
+      <div class="eyebrow"><span class="dot"></span>Seven Claude Code skills, verification built in</div>
+    </div>
+    <h1>The <span class="k">PM Code</span> Skills</h1>
+    <div class="bar"></div>
+    <div class="sub">Decode the standup. Pressure-test the decision. Catch the bug before it ships. Each skill carries a gate a machine can run, so its promises are checked, not claimed.</div>
+    <div class="chips">decoder<span class="s">·</span>decision-support<span class="s">·</span>code-quality-suite<span class="s">·</span>design-review-suite<span class="s">·</span>teach<span class="s">·</span>prompt-generator<span class="s">·</span>pg-startup-eval</div>
+  </div>
+</body>
+</html>
