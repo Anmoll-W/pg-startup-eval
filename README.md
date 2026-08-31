@@ -1,147 +1,108 @@
-# pg-startup-eval — The Definitive Startup Idea Evaluator for Claude
+<div align="center">
 
-Stop getting vague AI feedback on your idea. This skill applies 17 investor and founder frameworks, runs live market research, and ends with a forced verdict — Strong, Weak, or Pivot Required — with specific reasons.
+# The PM Code Skills
 
-## What It Does
+**Seven Claude Code skills for people who ship products, not templates.**
 
-Most AI feedback on startup ideas is encouraging mush. This skill evaluates any startup, product idea, or side project the way a rigorous investor would: by stress-testing assumptions, surfacing structural risks, and finding the fatal flaws before money and time are wasted.
+Each one solves a moment that kept going wrong in real product work: a standup you did not follow, an idea nobody stress-tested, a branch that shipped a bug, a screen that looked off and no one could say why. Every skill carries a verification section a machine can run, so its promises are checked, not claimed.
 
-It applies 17 frameworks across 10 evaluation phases — from problem severity and market sizing to moat analysis and unit economics — and ends with one non-hedged verdict plus a roadmap of next steps. It also auto-detects business type (software vs. physical/capital vs. service) and shifts the evaluation lens accordingly.
+![License](https://img.shields.io/badge/license-MIT-1e293b?style=flat-square)
+![Skills](https://img.shields.io/badge/skills-7-1e293b?style=flat-square)
+![Built for](https://img.shields.io/badge/built_for-Claude_Code-1e293b?style=flat-square&logo=anthropic&logoColor=white)
+![Maintained by](https://img.shields.io/badge/by-The_PM_Code-1e293b?style=flat-square)
 
-## Frameworks Applied (17+)
+*A collection by [The PM Code](https://www.linkedin.com/company/the-pm-code/). Follow along as we build in public.*
 
-| Framework | What It Evaluates |
-|---|---|
-| Paul Graham (YC) | Organic vs. sitcom origin, fatal mistake checklist, schlep/unsexy filter, default alive test |
-| Peter Thiel (Zero to One) | 7 Questions, the Thiel Secret, 10x test, monopoly structure |
-| Marc Andreessen (PMF) | Product-market fit signal, distribution as strategy |
-| Sequoia Capital | 10-block scorecard across purpose, problem, solution, team, market |
-| Bill Gurley | Bottom-up market sizing methodology, "market you can win" framing |
-| Steve Blank | Customer development stages, problem vs. solution interviews |
-| Rob Fitzpatrick (Mom Test) | Commitment ladder (Level 0–3), validation conversation structure |
-| Clayton Christensen (JTBD) | Functional, emotional, and social job layers |
-| Hamilton Helmer (7 Powers) | Scale economies, network effects, switching costs, counter-positioning, cornered resource, process power, branding |
-| Geoffrey Moore (Crossing the Chasm) | Beachhead market sizing and dominance test |
-| Eric Ries (Lean Startup) | Fake door test, concierge test, vanity vs. real metrics |
-| Alexander Osterwalder | Value Proposition Canvas — fit between jobs, pains, and gains |
-| Jeff Bezos | Working Backwards press release test, hardest FAQ method |
-| Ben Horowitz | Business model alignment — pricing must match value delivery |
-| First Round Capital | Domain access, learning velocity, obsessive problem proximity |
-| a16z | Counter-positioning lens: structural vs. executional reasons incumbents can't copy you |
-| Bill Gross (Idealab) | Timing as the #1 factor — enabling wave identification |
+</div>
 
-## What You Get
+---
 
-Every evaluation produces a 14-section output:
+## What this is
 
-1. **Market Research Findings** — competitive landscape, incumbents, pricing, recent investment activity
-2. **Idea Classification** — business type, origin (organic vs. sitcom), current validation level
-3. **The Thiel Secret** — what the founder knows that most people don't; flagged as absent if not articulable
-4. **Jobs-to-Be-Done Analysis** — functional, emotional, and social job layers mapped
-5. **Why Now — Enabling Wave** — the specific technology, behavior, or regulatory change that makes this the right moment
-6. **Market Size — Bottom-Up** — customer count × realistic conversion × ACV; Year 1 and Year 3 projections
-7. **Thiel's 7 Questions** — rated Strong / Weak / Unknown across engineering, timing, monopoly, people, distribution, durability, and secret
-8. **The 10x Test** — the one dimension of superiority; a working-backwards press release in customer language
-9. **Business Model** — CAC, LTV, LTV/CAC ratio, payback period, gross margin, default-alive assessment
-10. **Go-to-Market** — distribution model, first 100 customers, growth loop, beachhead dominance timeline
-11. **Defensibility — 7 Powers Assessment** — each power rated active now / buildable in 12 months / buildable in 3 years / not applicable; 18-month clone test
-12. **Founder and Team Fit** — domain insight, access to early customers, bias toward action, PG fatal mistakes
-13. **Validation Status** — current commitment level (0–3), path to Level 3 validation in 30 days
-14. **Sequoia Scorecard** — 10-block rating; Three Fatal Flaws; Final Verdict
+A Claude Code skill is a folder of instructions that Claude reads and follows the moment your request matches it. No setup, no key, no service. You drop the folder into `~/.claude/skills/` and the skill activates on its own when you need it.
 
-## Evaluation Proof — 5 Real Ideas Tested
+These seven were built the hard way. Each started as a workflow that broke in the same place every week, got written down as a contract, then got a verification gate bolted to the bottom so it could not quietly drift. Two of them fold in outside reference material, credited in [NOTICE.md](NOTICE.md); the mode logic, the finding formats, and the gates are original work.
 
-| Idea | Type | Verdict | Key Insight Surfaced |
-|---|---|---|---|
-| Dog walking app | B2C Marketplace | PIVOT REQUIRED | Rover already has vet chat; market is solved infrastructure; no enabling wave justifies a new entrant |
-| AI contract review for law firms | B2B SaaS | WEAK | No tech co-founder for a hard ML problem; "the model learns the firm's playbook" claim is unproven; 18-month window is closing as BigLaw deploys Harvey |
-| Async video standup tool | B2B SaaS | WEAK | Atlassian owns Loom + Jira + Rewatch and can bundle this feature free within 18 months; no counter-positioning against the bundle |
-| PMDojo (PM learning app) | B2C Consumer | WEAK | Quiz gate is a 2-sprint add for any PM newsletter; B2C ceiling without a B2B motion; beachhead of "aspiring PMs" is too broad to dominate |
-| EV charging franchise (India) | Physical Infrastructure | WEAK | Franchisor ROE projections assume 50% charger utilization; documented real-world average in India is 5–25%; operator bears all capital risk while the platform captures brand value and data |
+## The skills
 
-## How to Install
+| Skill | The moment it fixes | Verdict it forces |
+|---|---|---|
+| **[decoder](skills/decoder/)** | Your engineer said something in the standup and you nodded without understanding it | The concept, an analogy, the trap, and one question to bring back |
+| **[decision-support](skills/decision-support/)** | An idea, plan, or decision needs pressure before anyone commits | A forced verdict with a kill criterion, or a plan with every open branch named |
+| **[code-quality-suite](skills/code-quality-suite/)** | A branch is about to ship and you want the bugs found first | Ranked findings, each with a reproduction and a named test |
+| **[design-review-suite](skills/design-review-suite/)** | A screen looks off and nobody can say which rule it breaks | Every finding cites WCAG 2.2 or a Nielsen heuristic, or it is labelled TASTE and ranked below |
+| **[teach](skills/teach/)** | Real work produced a lesson worth keeping, and it vanished by the next session | One six-line lesson, logged and seeded into spaced repetition |
+| **[prompt-generator](skills/prompt-generator-skill/)** | A vague prompt makes the model guess tone, structure, and format | A production-ready XML prompt, about 75 percent fewer tokens than the naive version |
+| **[pg-startup-eval](skills/pg-startup-eval/)** | AI feedback on your startup idea is encouraging mush | Seventeen investor frameworks and a Strong, Weak, or Pivot verdict |
 
-### Claude Code (Recommended)
+## What makes them different
 
-1. Clone this repository into your Claude skills directory:
+Most skills you find are a paragraph of good intentions. These are contracts.
+
+**A mode is named before it runs.** decision-support tells you it is in GRILL mode before the first question. code-quality-suite states SECURITY or PRE-LAUNCH before it reads a line. You always know which job is running.
+
+**Every claim carries a source.** A finding names a file and a line, or a rule, or the command that produced the number. code-quality-suite will not return a passing verdict without pasted test output. design-review-suite deletes any row whose measured value was estimated rather than computed. A claim with no source gets a label that ranks it last.
+
+**The gate is mechanical.** decoder is graded by an adversarial eval suite of 33 fixtures, each built to make it fail in one specific way, each answer judged by a second model told to refute it rather than agree. That is the bar the whole collection is held to: a promise you cannot measure does not ship.
+
+**They degrade honestly.** Each skill has a private local-context layer that is not published here. When that layer is absent, the skill still runs end to end and says exactly what it skipped. It never invents a path, a name, or a count to look complete.
+
+## Install
+
+Every skill installs the same way. Clone the repository, then copy the one skill you want into your Claude Code skills folder.
 
 ```bash
-git clone https://github.com/Anmoll-W/pg-startup-eval ~/.claude/skills/pg-startup-eval
+git clone https://github.com/Anmoll-W/thepmcode-skills
+cp -r thepmcode-skills/skills/decoder ~/.claude/skills/decoder
 ```
 
-That's it. Claude Code auto-discovers skills in `~/.claude/skills/` — no settings file changes needed.
+Swap `decoder` for any skill folder name from the table above. Want all of them?
 
-2. Use it in any Claude Code session:
-
+```bash
+git clone https://github.com/Anmoll-W/thepmcode-skills
+cp -r thepmcode-skills/skills/* ~/.claude/skills/
 ```
-/pg-startup-eval
-```
 
-Or just describe your idea naturally — the skill is triggered by evaluation-intent phrases like "what do you think about this idea?", "is this worth pursuing?", or "I was thinking of building X."
+Once a skill sits in `~/.claude/skills/`, it activates automatically inside Claude Code the moment your request matches what it does. Each skill folder has its own README with the details.
 
-### Manual Use (Without Claude Code)
+## A closer look at each
 
-Copy the contents of `SKILL.md` into any Claude conversation as a system prompt, then describe your idea.
+### decoder
 
-### What Gets Asked
+You are in the standup. Your engineer says you need a message queue because the webhook processing is causing race conditions. You nod, you write it down, and two days later you realise you approved something you did not understand. decoder reads what you pasted, works out whether you want an explanation, an approval call, or a safety read, and answers first, always, before it asks you anything. Every answer ends by telling you whether it checked your system or gave you general principle, because a confident guess and a researched answer read identically until the tool is forced to say which one you are holding. [Read more](skills/decoder/).
 
-Before evaluating, the skill asks for exactly five things:
+### decision-support
 
-1. The idea — in plain language, one paragraph
-2. Target customer — who specifically has this problem
-3. Idea origin — did this come from lived experience with the problem, or was it brainstormed as a business opportunity?
-4. Current user conversations — have you spoken to anyone with this problem? What did you hear?
-5. Idea type — B2B SaaS / B2C / Marketplace / Consumer app / Hardware / Service / Other
+Four modes for the moment before you commit. EVALUATE judges an idea to a forced verdict with a kill criterion. GRILL interviews you one question at a time on a plan you will defend, and every "we will figure that out later" goes on the open list by name. INVERT runs a proposed solution back to the problem it claims to solve, and grades the evidence twice, because a single grade hides the gap between a real pain and an untested fix. CHALLENGE red-teams a position you are not defending live. [Read more](skills/decision-support/).
 
-The evaluation does not proceed until all five are answered. This is intentional — the input quality determines the output quality.
+### code-quality-suite
 
-## Example Output Structure
+Five review modes over one shared baseline. FIND-BUGS reads every changed file end to end and maps the failure surface. SECURITY scopes it to the OWASP Top 10 at an ASVS Level 1 bar and traces every tainted value to its source before it reports. QA-CHECKLIST builds a test plan from the code, never from memory. WEBAPP-TEST drives a running app with Playwright. PRE-LAUNCH audits a whole repository with six specialists and a mandatory independent verification pass, so no specialist is the last word on its own claim. [Read more](skills/code-quality-suite/).
 
-Each section is 3–8 sentences, specific to the idea, with no generic startup advice. The Three Fatal Flaws section explicitly rules out phrases like "execution is hard" or "competition exists" — every flaw must be specific to the idea being evaluated.
+### design-review-suite
 
-The Final Verdict section is one of three options with no hedging:
+Five modes that turn "this looks off" into a finding with a rule number. CRITIQUE scores the Nielsen heuristics against named elements. AUDIT measures contrast, target size, and font stacks into a table where every value came from a command. POLISH runs the last pass over spacing, state, type, and motion, and gates itself on BUILD-CHECK. BUILD-CHECK reads a fifteen-line checklist by command and prints one verdict. DESIGN-SYSTEM picks palettes and pairings and runs them through the contrast probe before any code uses them. [Read more](skills/design-review-suite/).
 
-- **Strong** — enabling wave exists, problem is severe and frequent, 10x differentiation is believable, unit economics work, distribution is identified, founder has asymmetric insight, at least 2 of Helmer's 7 Powers are buildable
-- **Weak** — 1–3 of the above fail; states exactly what must change and which hypothesis must be validated first
-- **Pivot Required** — the idea as stated won't work; proposes one specific adjacent idea worth exploring based on the founder's domain and the customer pain that was identified
+### teach
 
-## Skill Chaining
+One session, one lesson, six lines. When real work produces something worth keeping, an architectural decision, a product judgment call, a pattern applied, teach writes a six-line block, logs the concept, and seeds it into a spaced-repetition queue due tomorrow. The review mode quizzes you on what you actually built, not on definitions, and it deletes any card that points at infrastructure you have since retired. It is small on purpose. A lesson that costs the session its flow is not read twice. [Read more](skills/teach/).
 
-After a verdict, the skill recommends the appropriate next action:
+### prompt-generator
 
-**If Strong:**
-- Mine requirements from customer conversations (inline, no skill installed)
-- Design the MVP feature set (inline, no skill installed)
-- `/marketing-skills:launch-strategy` — build the GTM plan
-- `/marketing-skills:customer-research` — run formal discovery
+A vague prompt forces the model to make dozens of implicit decisions about tone, structure, depth, and format, and every one of those is variance and wasted tokens. This skill turns a role description into a production-ready, XML-structured prompt with a consistent eight-section schema, cutting roughly 75 percent of the tokens a naive prompt burns on preamble, trailing summaries, and prose where a table would do. [Read more](skills/prompt-generator-skill/).
 
-**If Weak:**
-- Return to this skill after validating the single most important hypothesis
+### pg-startup-eval
 
-**If Pivot Required:**
-- `superpowers:brainstorming` — generate adjacent idea variants
+Most AI feedback on a startup idea is encouraging mush with no framework and no verdict. This skill runs any idea through seventeen investor and founder frameworks, from Paul Graham and Thiel to Sequoia and the Mom Test, pulls live market research, sizes the market bottom up, and ends with one verdict that does not hedge: Strong, Weak, or Pivot Required, with the three fatal flaws named. [Read more](skills/pg-startup-eval/).
 
-**For all verdicts:**
-- `decision-support` (GRILL mode), stress-test the pitch and simulate the investor conversation
-- Design the technical system when it's time to build (inline, no skill installed)
+## License and credit
 
-## Reference Files
+The original work here is MIT licensed. See [LICENSE](LICENSE).
 
-The skill includes four reference documents used during evaluation:
+Two skills bundle third-party reference material that keeps its own license: code-quality-suite reads OWASP Cheat Sheet content (CC BY-SA 4.0) and an Apache-2.0 Playwright reference, and design-review-suite reads the MIT-licensed ui-ux-pro-max database and the MIT-licensed Vercel Labs web interface guidelines. Full attribution is in [NOTICE.md](NOTICE.md) and in each skill's own NOTICE.
 
-- `references/market-sizing.md` — Gurley's bottom-up methodology in full detail
-- `references/moat-frameworks.md` — Complete 7 Powers breakdown with real examples and early-stage tests
-- `references/validation-playbook.md` — Mom Test + Blank + Ries validation methods with specific conversation templates
-- `references/output-template.md` — Exact output format for each of the 14 sections
+## Let us connect
 
-## Contributing
+Built by [The PM Code](https://www.linkedin.com/company/the-pm-code/) · [Newsletter](https://thepmcode.substack.com) · [thepmcode.com](https://thepmcode.com)
 
-**Submit an idea for evaluation:** Open an issue with your idea, target customer, and idea origin. Ideas evaluated publicly will be added to the proof table above with your permission.
-
-**Improve a framework:** If a framework application is wrong, shallow, or outdated, open a PR with the specific section in `SKILL.md` and the proposed change. Include the source (paper, book, talk) for any factual claim.
-
-**Add a framework:** New frameworks must earn their place — they must catch failure modes not already covered by existing frameworks. Open an issue first to discuss before writing a PR.
-
-## License
-
-MIT — use, fork, and adapt freely. Attribution appreciated but not required.
+If a skill saved you a bad meeting or a shipped bug, a star helps other product people find it.

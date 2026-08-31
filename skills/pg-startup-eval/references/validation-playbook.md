@@ -1,4 +1,4 @@
-# Validation Playbook — Mom Test + Blank + Ries
+# Validation Playbook: Mom Test + Blank + Ries
 
 ## The Core Principle (Fitzpatrick)
 
@@ -6,13 +6,13 @@ People are polite. When you show them an idea and ask "would you use this?", alm
 
 The only valid evidence is:
 1. What people have **already done** (past behavior, not hypothetical future behavior)
-2. What they are **currently willing to commit** (money, time, or reputation — not words)
+2. What they are **currently willing to commit** (money, time, or reputation, not words)
 
 Every validation conversation must extract one or both. If it extracts neither, it was a pleasant waste of time.
 
 ---
 
-## The Mom Test — Three Rules (Fitzpatrick)
+## The Mom Test: Three Rules (Fitzpatrick)
 
 ### Rule 1: Talk About Their Life, Not Your Idea
 
@@ -36,15 +36,15 @@ The past is factual. The future is aspirational and self-flattering.
 
 ### Rule 3: Talk Less, Listen More
 
-Your job is to understand their world — not to pitch your idea. If you're talking more than 40% of the time, you're not doing customer discovery. You're doing customer permission-seeking.
+Your job is to understand their world, not to pitch your idea. If you're talking more than 40% of the time, you're not doing customer discovery. You're doing customer permission-seeking.
 
 The moment you start explaining your idea in detail, you've contaminated the data. Their subsequent responses are reactions to your idea, not descriptions of their reality.
 
 ---
 
-## The Commitment Ladder — Full Detail
+## The Commitment Ladder: Full Detail
 
-### Level 0 — Worthless (Do Not Count As Validation)
+### Level 0: Worthless (Do Not Count As Validation)
 - "That's interesting"
 - "I'd definitely use that"
 - "You should build this"
@@ -55,7 +55,7 @@ The moment you start explaining your idea in detail, you've contaminated the dat
 
 These signals prove nothing except that people are willing to be encouraging to someone's face.
 
-### Level 1 — Weak (Directional, Not Conclusive)
+### Level 1: Weak (Directional, Not Conclusive)
 - Willing to take a follow-up call with a specific agenda
 - Introduced you to one peer who has the same problem (small reputation risk)
 - Joined a beta with verified email and specific onboarding date
@@ -64,17 +64,17 @@ These signals prove nothing except that people are willing to be encouraging to 
 
 **What it tells you**: They believe the problem exists and find the conversation worth their time. Does not indicate willingness to pay or change behavior.
 
-### Level 2 — Medium (Real Signal, Not Yet Proof)
+### Level 2: Medium (Real Signal, Not Yet Proof)
 - Agreed to a structured pilot with a specific start date and success criteria
 - Gave detailed requirements or a specific use case with named colleagues
 - Used your manual/concierge version of the product (even if imperfect)
-- Introduced you to their manager or VP — the economic buyer (real reputation risk)
+- Introduced you to their manager or VP, the economic buyer (real reputation risk)
 - Referred you to 3+ colleagues unprompted
 
 **What it tells you**: They have a real problem and see enough value to invest their own time and reputation. Still not proof they'll pay.
 
-### Level 3 — Strong (Actual Validation)
-- Pre-payment of any kind — even $50
+### Level 3: Strong (Actual Validation)
+- Pre-payment of any kind, even $50
 - Letter of Intent (real business commitment with named stakeholders)
 - Credit card on file before product exists
 - Signed pilot agreement with specific success metrics and expansion terms
@@ -92,7 +92,7 @@ Every customer discovery conversation has four objectives, in order:
 1. **Verify the problem exists**: Is this problem real in their world? How does it manifest? How often?
 2. **Assess severity and priority**: Is this in their top 3 problems? What have they tried? What did they spend?
 3. **Understand the context**: What does their workflow look like around this problem? Who else is involved? What system are they currently using?
-4. **Climb the commitment ladder**: What is the next concrete step — can they commit to X?
+4. **Climb the commitment ladder**: What is the next concrete step, can they commit to X?
 
 A conversation that achieves only objectives 1-2 without reaching 4 is incomplete.
 
@@ -106,12 +106,12 @@ These templates reliably produce specific, usable signal:
    Gets you actual workflow context, not theoretical description.
 
 2. **"What did you do when that happened?"**
-   Reveals the actual workaround — your real competitor.
+   Reveals the actual workaround, your real competitor.
 
 3. **"Have you looked for solutions? What happened?"**
-   Reveals how actively they've pursued a fix — a proxy for problem severity and willingness to pay.
+   Reveals how actively they've pursued a fix, a proxy for problem severity and willingness to pay.
 
-4. **"How much did that cost you — in time or money?"**
+4. **"How much did that cost you, in time or money?"**
    Forces quantification. Vague "it's frustrating" becomes "we lose about 4 hours every Monday to this."
 
 5. **"Who else in your company deals with this?"**
@@ -123,7 +123,7 @@ These templates reliably produce specific, usable signal:
 
 Before committing engineering resources, get to at least one Level 3 signal:
 
-### Option A — Fake Door Test (Ries)
+### Option A: Fake Door Test (Ries)
 1. Build a landing page describing the product
 2. Drive 200-500 targeted visitors via paid traffic or personal outreach
 3. Measure conversion to email capture (>20%) or payment ($1+ to reserve a spot)
@@ -131,8 +131,8 @@ Before committing engineering resources, get to at least one Level 3 signal:
 
 If conversion is below threshold: learn from who did convert (interview every one), not from aggregate stats.
 
-### Option B — Concierge Test (Ries)
-1. Deliver the product's value manually — do the work yourself
+### Option B: Concierge Test (Ries)
+1. Deliver the product's value manually, do the work yourself
 2. Find 5 early adopters willing to participate
 3. Charge them (even a small amount) from Day 1
 4. Iterate on the delivery until you understand the job precisely
@@ -140,7 +140,7 @@ If conversion is below threshold: learn from who did convert (interview every on
 
 If customers won't engage with the concierge version (where you're doing all the work), they won't use the automated version either.
 
-### Option C — Letter of Intent Campaign (Blank)
+### Option C: Letter of Intent Campaign (Blank)
 1. Write a 1-page product description
 2. Contact 20 target customers directly (warm outreach preferred)
 3. Ask for a signed LOI with pricing and expected timeline
@@ -150,7 +150,7 @@ If customers won't engage with the concierge version (where you're doing all the
 
 ---
 
-## The Vanity Metrics List — Ignore These
+## The Vanity Metrics List: Ignore These
 
 If any of these are increasing, it tells you nothing about whether the business is actually working:
 
@@ -169,19 +169,19 @@ If any of these are increasing, it tells you nothing about whether the business 
 
 ---
 
-## Steve Blank's Customer Development — 4 Stages
+## Steve Blank's Customer Development: 4 Stages
 
 For full pre-build evaluations, understand where the founder is in this process:
 
-**Stage 1 — Customer Discovery**: Get out of the building. Talk to customers. Your hypothesis is wrong — the job is to find out how, as fast as possible. Do not present a solution; ask about the problem.
+**Stage 1: Customer Discovery**: Get out of the building. Talk to customers. Your hypothesis is wrong: the job is to find out how, as fast as possible. Do not present a solution; ask about the problem.
 
-**Stage 2 — Customer Validation**: Can you build a repeatable, scalable sales process that doesn't require founder personal selling? If you can only close deals via founder charm and network, you don't have a product — you have a consulting engagement.
+**Stage 2: Customer Validation**: Can you build a repeatable, scalable sales process that doesn't require founder personal selling? If you can only close deals via founder charm and network, you don't have a product: you have a consulting engagement.
 
-**Stage 3 — Customer Creation**: Demand generation. Once you can sell repeatably, invest in demand creation.
+**Stage 3: Customer Creation**: Demand generation. Once you can sell repeatably, invest in demand creation.
 
-**Stage 4 — Company Building**: Transition from learning organization to execution organization.
+**Stage 4: Company Building**: Transition from learning organization to execution organization.
 
-Most failed startups failed at Stage 1 — they built something nobody wanted not because the team was bad, but because they never validated the problem hypothesis before building.
+Most failed startups failed at Stage 1: they built something nobody wanted not because the team was bad, but because they never validated the problem hypothesis before building.
 
 ---
 
